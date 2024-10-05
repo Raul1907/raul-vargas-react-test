@@ -1,0 +1,100 @@
+.productDetailContainer {
+  display: flex;
+  gap: 30px; /* Separación entre la imagen y la sección de detalles */
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+
+  @media (max-width: 768px) {
+    flex-direction: column; /* Apilar las secciones verticalmente en móviles */
+    gap: 15px; /* Reducir espacio entre elementos en pantallas pequeñas */
+    padding: 15px; /* Reducir el padding en móviles */
+  }
+}
+
+.imageSection {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+
+  .productImage {
+    max-width: 100%; /* La imagen ocupará el 100% del contenedor en móviles */
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover; /* Asegura que la imagen mantenga su proporción */
+  }
+}
+
+.detailsSection {
+  flex: 2; /* La sección de detalles ocupará más espacio en pantallas grandes */
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+
+  @media (max-width: 768px) {
+    padding: 15px; /* Reducir padding en móviles */
+  }
+}
+
+.detailsTitle {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  color: #333;
+
+  @media (max-width: 768px) {
+    font-size: 1.5rem; /* Ajustar tamaño de fuente en pantallas pequeñas */
+    margin-bottom: 15px; /* Reducir espacio en pantallas pequeñas */
+  }
+}
+
+.detailRow {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  font-size: 1rem;
+
+  @media (max-width: 768px) {
+    font-size: 0.9rem; /* Reducir tamaño de texto en móviles */
+    flex-direction: column; /* En móviles, los elementos se apilan */
+    margin-bottom: 8px; /* Reducir el espacio en móviles */
+  }
+}
+
+.detailLabel {
+  font-weight: bold;
+  color: #555;
+}
+
+.detailValue {
+  color: #777;
+}
+
+.detailDescription {
+  margin-top: 20px;
+
+  @media (max-width: 768px) {
+    margin-top: 15px; /* Reducir espacio superior en móviles */
+  }
+
+  .detailLabel {
+    font-size: 1rem;
+    color: #333;
+
+    @media (max-width: 768px) {
+      font-size: 0.9rem; /* Ajustar el tamaño de la etiqueta en móviles */
+    }
+  }
+
+  .detailValue {
+    margin-top: 10px;
+    font-size: 1rem;
+    color: #555;
+
+    @media (max-width: 768px) {
+      font-size: 0.9rem; /* Ajustar el tamaño del texto en móviles */
+      margin-top: 8px;
+    }
+  }
+}

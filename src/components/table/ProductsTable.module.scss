@@ -1,0 +1,128 @@
+.tableContainer {
+  width: 100%;
+  overflow-x: auto; /* Permite el scroll horizontal en pantallas pequeñas */
+  padding: 10px;
+
+  @media (max-width: 768px) {
+    padding: 5px; /* Ajustar padding en dispositivos móviles */
+  }
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse; /* Para quitar los espacios entre celdas */
+  margin-bottom: 20px;
+
+  th, td {
+    padding: 10px 15px;
+    border: 1px solid #ddd;
+    text-align: left;
+    white-space: nowrap; /* Evita que el texto se desborde */
+    
+    @media (max-width: 768px) {
+      padding: 8px 10px; /* Reducir el padding en móviles */
+      font-size: 14px; /* Reducir el tamaño de fuente en pantallas pequeñas */
+    }
+  }
+
+  th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+
+    @media (max-width: 768px) {
+      font-size: 14px;
+    }
+  }
+
+  tbody tr {
+    &:nth-child(odd) {
+      background-color: #f9f9f9;
+    }
+
+    &:hover {
+      background-color: #f1f1f1;
+    }
+  }
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+
+  button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 4px;
+
+    &:disabled {
+      background-color: #ccc;
+      cursor: not-allowed;
+    }
+
+    &:hover:not(:disabled) {
+      background-color: #0056b3;
+    }
+
+    &.activePage {
+      background-color: #28a745;
+    }
+
+    @media (max-width: 768px) {
+      padding: 8px 12px; /* Ajustar el tamaño de los botones en móviles */
+      font-size: 14px; /* Reducir el tamaño de la fuente */
+    }
+  }
+}
+
+.searchInput {
+  padding: 12px 0px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  width: 100%;
+  margin-bottom: 20px;
+
+  @media (max-width: 768px) {
+    padding: 8px;
+    font-size: 14px;
+  }
+}
+
+.actions {
+  display: flex;
+  gap: 10px;
+
+  button {
+    padding: 8px 12px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+
+    &.editButton {
+      background-color: #ffc107;
+      color: white;
+
+      &:hover {
+        background-color: #e0a800;
+      }
+    }
+
+    &.deleteButton {
+      background-color: #dc3545;
+      color: white;
+
+      &:hover {
+        background-color: #c82333;
+      }
+    }
+
+    @media (max-width: 768px) {
+      padding: 6px 10px; /* Ajustar tamaño en móviles */
+      font-size: 12px; /* Reducir tamaño de fuente */
+    }
+  }
+}

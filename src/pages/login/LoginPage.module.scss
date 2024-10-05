@@ -1,0 +1,66 @@
+.loginContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f4f4f4; /* Fondo gris claro para la página */
+
+  @media (max-width: 768px) {
+    padding: 10px; /* Reducir el padding en pantallas pequeñas */
+  }
+}
+
+.formWrapper {
+  background-color: white;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+  max-width: 400px;
+  width: 100%;
+  
+  @media (max-width: 768px) {
+    padding: 20px; /* Reducir padding en móviles */
+  }
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+  color: #333;
+
+  @media (max-width: 768px) {
+    font-size: 1.5rem; /* Ajustar el tamaño del título en móviles */
+  }
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px; /* Espacio entre los campos del formulario */
+  
+  @media (max-width: 768px) {
+    gap: 12px; /* Reducir espacio entre campos en móviles */
+  }
+}
+
+// button {
+//   background-color: #007bff;
+//   color: white;
+//   border: none;
+//   padding: 12px;
+//   border-radius: 4px;
+//   cursor: pointer;
+//   transition: background-color 0.3s ease;
+//   font-size: 1rem;
+
+//   &:hover {
+//     background-color: #0056b3;
+//   }
+
+//   @media (max-width: 768px) {
+//     padding: 10px;
+//     font-size: 0.9rem; /* Ajustar tamaño del texto en el botón en móviles */
+//   }
+// }
+

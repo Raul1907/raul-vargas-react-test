@@ -1,0 +1,33 @@
+.productCreateContainer {
+  max-width: 600px;
+  margin: 2rem auto;
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.form {
+  display: flex;
+  flex-direction: column; /* Mantener en una columna */
+  gap: 1rem;
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.5rem;
+}
+
+/* Estilos para los íconos de ayuda si es necesario */
+.infoIcon {
+  position: absolute;
+  right: -1.5rem;
+  top: 0.5rem;
+  cursor: pointer;
+  color: #007bff;
+}
+
+.infoIcon:hover {
+  color: #0056b3;
+}

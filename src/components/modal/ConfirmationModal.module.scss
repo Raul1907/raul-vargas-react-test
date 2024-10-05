@@ -1,0 +1,79 @@
+.overlay {
+  background-color: rgba(0, 0, 0, 0.75);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal {
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+  max-width: 400px;
+  width: 100%;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.modalContent {
+  text-align: center;
+}
+
+.modalTitle {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.modalMessage {
+  margin-bottom: 20px;
+}
+
+.buttonGroup {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px; /* Agrega espacio entre los botones */
+}
+
+.confirmButton, .cancelButton {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 16px; /* Tamaño de fuente estándar en pantallas grandes */
+}
+
+.cancelButton {
+  background-color: #f44336;
+}
+
+.confirmButton:hover {
+  background-color: #45a049;
+}
+
+.cancelButton:hover {
+  background-color: #d32f2f;
+}
+
+@media screen and (max-width: 768px) {
+  .modal {
+    max-width: 90%; /* Ajusta el ancho del modal para móviles */
+  }
+
+  .buttonGroup {
+    flex-direction: column; /* Cambia la dirección a vertical en dispositivos móviles */
+    gap: 15px; /* Espacio adicional entre los botones */
+  }
+
+  .confirmButton, .cancelButton {
+    width: 100%; /* Los botones ocuparán todo el ancho en móviles */
+    padding: 15px; /* Ajuste en el padding para mejorar el tacto en dispositivos móviles */
+    font-size: 18px; /* Incrementar el tamaño de la fuente en móviles para mejor legibilidad */
+  }
+}

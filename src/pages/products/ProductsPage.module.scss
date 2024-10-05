@@ -1,0 +1,19 @@
+.productsContainer {
+  max-width: 1200px; /* Limitar el ancho máximo en pantallas grandes */
+  margin: 0 auto; /* Centrar el contenedor */
+  padding: 20px;
+
+  @media (max-width: 768px) {
+    padding: 10px; /* Reducir padding en móviles */
+  }
+}
+
+.title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 20px;
+
+  @media (max-width: 768px) {
+    font-size: 1.5rem; /* Reducir tamaño de la fuente en pantallas móviles */
+  }
+}

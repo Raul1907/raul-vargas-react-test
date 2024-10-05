@@ -1,0 +1,54 @@
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.5rem;
+}
+
+
+label {
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 0.5rem;
+  position: relative;
+}
+
+label:after {
+  content: '*';
+  color: #ff1744;
+  margin-left: 0.25rem;
+}
+
+.input, .select, textarea {
+  padding: 12px 8px;
+  border: 1px solid #d1d1d1;
+  border-radius: 4px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+
+  &:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 4px rgba(0, 123, 255, 0.2);
+    outline: none;
+  }
+
+  &:content {
+    padding: 12px;
+  }
+
+  @media (max-width: 768px) {
+    padding: 16px 8px;
+    font-size: 0.9rem; /* Reducir tamaño del input en móviles */
+  }
+
+}
+
+textarea {
+  height: 100px;
+  resize: none;
+}
+
+.error {
+  color: #ff1744;
+  font-size: 0.875rem;
+  margin-top: 0.25rem;
+}

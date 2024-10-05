@@ -1,0 +1,52 @@
+.publicContainer {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* El contenedor debe ocupar toda la altura de la pantalla */
+  width: 90vw;
+  padding: 2px;
+
+  @media (max-width: 768px) {
+    width: 100vw;
+  }
+}
+
+.header {
+  background-color: #007bff;
+  color: white;
+  padding: 0px;
+  text-align: center;
+
+  h1 {
+    font-size: 2rem;
+
+    @media (max-width: 768px) {
+      font-size: 1.5rem; /* Ajuste del tamaño del texto del título en pantallas pequeñas */
+    }
+  }
+}
+
+.mainContent {
+  flex: 1; /* Ocupará todo el espacio disponible entre el header y el footer */
+  padding: 5px;
+  background-color: #f4f4f4;
+
+  @media (max-width: 768px) {
+    padding: 10px; /* Reducir el padding en dispositivos móviles */
+  }
+}
+
+.footer {
+  background-color: #007bff;
+  color: white;
+  text-align: center;
+  padding: 15px;
+
+  p {
+    margin: 0;
+    font-size: 1rem;
+
+    @media (max-width: 768px) {
+      font-size: 0.9rem; /* Ajustar el tamaño del texto en pantallas pequeñas */
+    }
+  }
+}
