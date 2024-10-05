@@ -21,7 +21,7 @@ Sigue los siguientes pasos para clonar y ejecutar el proyecto en tu entorno loca
 2. **Instalar dependencias: Si estás utilizando npm**:
     npm install
 
-4. **Compilar el proyecto para producción**
+3. **Compilar el proyecto para producción**
   npm run build
 
 4. **Ejecución del proyecto en modo desarrollo**
