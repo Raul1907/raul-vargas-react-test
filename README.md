@@ -20,10 +20,6 @@ Sigue los siguientes pasos para clonar y ejecutar el proyecto en tu entorno loca
 
 2. **Instalar dependencias: Si estás utilizando npm**:
     npm install
-    
-3. **Configurar variables de entorno**
-  REACT_APP_DEFAULT_USER=correo@correo.com.mx
-  REACT_APP_DEFAULT_PASSWORD=Welcome123#
 
 4. **Compilar el proyecto para producción**
   npm run build
